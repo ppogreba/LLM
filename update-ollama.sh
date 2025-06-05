@@ -4,7 +4,7 @@ read -p "Do you want to update/install docker?  y/n : " docker
 read -p "Do you want to update/install ollama?  y/n : " ollama
 read -p "Do you want to update/install Open-WebUI?  y/n : " openwebui
 
-if ["${docker,}" == "y"]; then
+if [ "${docker,}" == "y" ]; then
     echo "installing/updating docker"
     apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 else
